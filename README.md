@@ -1,0 +1,26 @@
+# n8n Docker Deployment (Render / Railway Ready)
+
+## 📌 الخطوات
+
+### 1. عمل Fork أو نسخ الريبو
+- اعمل Fork أو انسخ الملفات لحسابك على GitHub.
+
+### 2. إعداد ملف البيئة
+- انسخ `.env.example` إلى `.env`
+- عدل القيم:
+  - `N8N_BASIC_AUTH_USER` → اسم المستخدم
+  - `N8N_BASIC_AUTH_PASSWORD` → باسورد قوي
+  - `N8N_HOST` و `WEBHOOK_URL` حسب رابط النشر
+  - `GENERIC_TIMEZONE` حسب منطقتك
+
+### 3. النشر على Render
+1. افتح [Render](https://render.com) → New → Web Service.
+2. اربط حساب GitHub واختر الريبو.
+3. أضف الـ Environment Variables من ملف `.env`.
+4. شغل الخدمة.
+
+### 4. النشر على Railway
+1. افتح [Railway](https://railway.app) → New Project → Deploy from GitHub.
+2. اربط الريبو.
+3. أضف الـ Environment Variables.
+4. شغل الخدمة.
